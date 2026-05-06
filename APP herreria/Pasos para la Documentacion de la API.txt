@@ -1,0 +1,16 @@
+Paso 1: 
+-instalar flasgger:
+pip install flasgger
+
+Paso 2:
+-Importalro a nuestra API:
+
+from flask import Flask, jsonify, request
+from flasgger import Swagger
+
+app = Flask(__name__)
+swagger = Swagger(app)
+
+Paso 3: 
+-ejecutar el servidor y poner la URL:
+http://127.0.0.1:5000/apidocs 
